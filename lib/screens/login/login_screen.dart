@@ -5,6 +5,14 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
+      body: Center(
+        child: TextButton(
+          child: Text('back'),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
     );
   }
 }
