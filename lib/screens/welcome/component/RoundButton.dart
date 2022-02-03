@@ -22,16 +22,21 @@ class RoundButton extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.all(5),
+      margin: EdgeInsets.all(5),
       width: size.width * 0.6,
+      //  color: color,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(29),
-        child: FlatButton(
-          padding: EdgeInsets.all(15),
-          color: color,
-          onPressed: press(),
+        child: ElevatedButton(
+          //  padding: EdgeInsets.all(15),
+          //color: color,
+          onPressed: () {},
           child: Text(
             text,
             style: TextStyle(color: textcolor),
+          ),
+          style: ElevatedButton.styleFrom(
+            primary: color,
           ),
         ),
       ),
